@@ -6,7 +6,6 @@ import Button from '../../../components/ui/Button';
 const RecentAlerts = () => {
   const navigate = useNavigate();
   const [acknowledgedAlerts, setAcknowledgedAlerts] = useState(new Set());
-
   const recentAlerts = [
     {
       id: 1,
@@ -87,7 +86,6 @@ const RecentAlerts = () => {
       default: return 'text-gray-600';
     }
   };
-
   const getVerificationBadge = (status) => {
     switch (status) {
       case 'verified':
